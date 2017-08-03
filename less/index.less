@@ -1,0 +1,274 @@
+@import "zcm.less";
+//logo
+header{
+    .logo{
+        .h(94);
+        .pl(20);
+        .pr(20);
+        background-color: #FA3432;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .fs(30);color: #fff;
+        a{.fs(30);color: #fff;}
+        .logo-title{
+            display: flex;
+             align-items: center;
+            img{
+                .mr(15);
+            }
+        }        
+    }
+}
+//topnav
+.topnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    .h(86);
+    .current{
+        color:#ff3636;
+    }
+    a{
+        .fs(24);
+        color: #4b4a4a;
+    }
+}
+//轮播图
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    .swipe-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    .swipe-wrap > div {
+      float:left;
+      width:100%;
+      position: relative;
+    }
+    
+    img{ /*让图片100%*/
+        width: 100%;  
+    }
+    
+    .indirector{
+        position: absolute;
+        bottom:20px;
+        left:50%;transform: translateX(-50%);
+    }
+    .indirector span{
+        display: inline-block;margin: 3px;
+        width: 10px;height: 10px;border-radius: 50%;
+        background-color: #fff;
+    }
+    .indirector span.on{
+        background-color: red;
+    }
+}
+//usernav
+.usernav{
+    display: flex;
+    align-items: center;
+    .h(200);
+    background-color: #FFF;
+    justify-content: space-around;
+    i{
+        display: block;
+        .w(90);
+        .h(90);
+        .lh(90);
+        border-radius: 25%;
+        .tc();
+        .fs(50);
+        color: #FFF;
+    }
+    .icon-suo{
+        background-color: #4099E9;
+    }
+    .icon-women{
+        background-color: #FB6361;
+    }
+    .icon-xinshouzhiyin{
+        background-color: #40C8B0;
+    }
+    .icon-wenti{
+        background-color: #FFAE28;
+    }
+    div{
+        .fs(24);
+        .lh(24);
+        .mt(12);
+        color: #808080;
+    }
+}
+//hotproducts
+.hotproducts{
+    .pl(25);
+    .pr(25);
+    .title{
+        .h(95);
+        .lh(95);
+        .fs(30);
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3{
+            background: url(../img/home_ico_09.png) no-repeat;
+            .bs(46,46);
+            .w(250);
+            .pl(48);
+            .h(46);
+            .lh(46);
+        }
+        a{
+            color: #9A9B9C;
+        }
+    }
+    .itemlist{
+        li{
+            .h(255);
+            border: 1px solid #DDDDDD;
+            .p(25);
+            .mb(25);
+            .item-title{
+                display: flex;
+                justify-content: space-between;
+                .mb(28);
+                h4{
+                    color: #494848;
+                    .fs(28);
+                }
+                span{
+                    color: #fff;
+                    .fs(22);
+                    .cash{
+                        .w(85);
+                        .h(30);
+                        background-color: #ffab37;
+                        display: inline-block;
+                        .tc();
+                        border-radius: 5%;
+                    }
+                    .icon-vip{
+                        .w(33);
+                        .h(30);
+                        background-color: #ff7404;
+                        display: inline-block;
+                        .tc();
+                        .fs(22);
+                        border-radius: 5%;
+                    }
+                }
+            }
+            .data{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .ml(43);
+                .mr(43);
+                .data1{
+                    
+                    strong{
+                        color: #FB4034;
+                        .fs(38);
+                    }
+                    em{
+                        color: #FF7900;
+                        .fs(24);
+                    }
+                }
+                .data2{
+                    color: #9A9B9C;
+                    .p1{
+                        .fs(30);
+                        strong{
+                            color: #3D3C3C;
+                        }
+                    }
+                    .p2{
+                        .fs(30);
+                    }
+                }
+                .data3{
+                    img{
+                        .w(136);
+                        .h(136);
+                    }
+                }
+            }
+        }
+    }
+}
+.news{
+    .title{
+        .pl(18);
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        .h(95);
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        h4{
+            .fs(30);
+        }
+    }
+    .newscontent{
+        .pl(18);
+        .pr(18);
+        border-bottom: 1px solid #ddd;
+        .mb(23);
+        .items{
+          .pt(35); 
+          display: flex; 
+          align-items: center;
+          img{
+              .w(110);
+              .h(110);
+              border-radius: 25%;
+              .mr(23);
+              flex: 0 0 auto;              
+          }
+          .note{
+               flex: 1 1 auto;   
+                  h4{
+                      .fs(30);
+                      .mb(23);
+                      color: #494848;
+                  }
+                  p{
+                      display: flex;
+                      justify-content: space-between;
+                      color: #9A9B9C;
+                      .fs(28);
+                  }
+              }
+        }
+        .items:nth-child(3){
+            .pb(23);
+        }
+    }
+}
+//footer
+footer{
+    .h(165);
+    .pt(45);
+    .pb(50);
+    .tc();
+    .copy1{
+        color: #494848;
+        .fs(28);
+        .mb(26);
+        a{
+            color: #494848;
+        .fs(28);
+        }
+    }
+    .copy2{
+        color: #9A9B9C;
+        .fs(26);
+    }
+}
